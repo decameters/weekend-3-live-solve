@@ -6,5 +6,5 @@ CREATE TABLE tasks (
 	is_completed BOOLEAN DEFAULT FALSE
 );
 
-INSERT into tasks (tasks)
+INSERT into tasks (name)
 VALUES ('fun thing to do');

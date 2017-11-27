@@ -1,11 +1,11 @@
 var pg = require('pg');
 
-var config = { // this object tells PG what to do
-    database: 'todo_livesolve', // the name of our database
-    host: 'localhost', // where is your database (which computer)?
-    port: 5432, // the port number for your database, 5432 is default
-    max: 10, // how many connections at one time
-    idleTimeoutMillies: 30000 // 30 seconds to try to connect to our DB
+var config = {
+    database: 'todo_livesolve',
+    host: 'localhost',
+    port: 5432,
+    max: 10,
+    idleTimeoutMillis: 30000
 };
 
 module.exports = new pg.Pool(config)
