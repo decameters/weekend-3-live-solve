@@ -1,0 +1,26 @@
+{
+  "name": "weekend-3-live-solve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decameters/weekend-3-live-solve.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decameters/weekend-3-live-solve/issues"
+  },
+  "homepage": "https://github.com/decameters/weekend-3-live-solve#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pg": "^7.4.0"
+  }
+}
