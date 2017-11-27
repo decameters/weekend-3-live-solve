@@ -53,7 +53,7 @@ router.put('/complete/:id', function (req, res){
             console.log('Error connecting to database', errorConnectingToDatabase);
             res.sendStatus(500);
         } else {
-            client.query(`UPDATE tasks SET is_complete=TRUE WHERE id=$1`, [req.params.id], function(errorMakingQuery, result){
+            client.query(`UPDATE tasks SET is_completed=TRUE WHERE id=$1`, [req.params.id], function(errorMakingQuery, result){
                 done();
                 if(errorMakingQuery){
                     console.log('Error making query', errorMakingQuery);
